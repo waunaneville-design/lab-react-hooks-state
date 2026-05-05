@@ -8,13 +8,21 @@ const products = [
 ]
 
 export default function ProductList({ category, onAddToCart }) {
-  const filtered = category === "all" ? products : products.filter(p => p.category === category)
+  const filtered =
+    category === "all"
+      ? products
+      : products.filter((p) => p.category === category)
 
   return (
-    <div>
-      {filtered.map(p => (
-        <ProductCard key={p.id} product={p} onAddToCart={onAddToCart} />
-      ))}
+    <div className="product-list">
+      {filtered.length === 0 ? (
+        <p>No products available</p>
+      ) : (
+        filtered.map((p) => (
+          <ProductCard key={p.id} product={p} onAddToCart={onAddToCart} />
+        ))
+      )}
     </div>
   )
 }
+
