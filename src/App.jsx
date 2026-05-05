@@ -11,13 +11,12 @@ const App = () => {
 const [cart, setCart] = useState([])
   // TODO: Implement state for category filtering
 const [category, setCategory] = useState("all")
-  return (
-    <div>
+ return (
+    <div className={darkMode ? "dark" : "light"}>  
       <h1>🛒 Shopping App</h1>
-      <p>
-        Welcome! Your task is to implement filtering, cart management, and dark
-        mode.
-      </p>
+      <p>Welcome! Your task is to implement filtering, cart management, and dark mode.</p>
+
+      <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
 
       {/* TODO: Render DarkModeToggle and implement dark mode functionality */}
       <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
