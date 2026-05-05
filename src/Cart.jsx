@@ -4,7 +4,7 @@ export default function Cart({ cart }) {
   const total = cart.reduce((sum, item) => sum + item.price, 0)
 
   return (
-    <div>
+    <div className="cart">
       <h2>Cart</h2>
       {cart.map((item, i) => (
         <div key={i}>{item.name} - ${item.price}</div>
