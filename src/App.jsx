@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ProductList from './components/ProductList'
 import DarkModeToggle from './components/DarkModeToggle'
 import Cart from './components/Cart'
+import './App.css'
 
 const App = () => {
   // TODO: Implement state for dark mode toggle
