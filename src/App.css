@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Dark and light themes */
+.dark {
+  background-color: #222;
+  color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.light {
+  background-color: #fff;
+  color: #222;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* General layout */
+h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+label {
+  font-weight: bold;
+  margin-right: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select {
+  padding: 5px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Product cards */
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: inherit;
 }
 
-.card {
-  padding: 2em;
+.product-card h3 {
+  margin: 10px 0;
 }
 
-.read-the-docs {
-  color: #888;
+.product-card button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Cart */
+.cart {
+  margin-top: 30px;
+  padding: 15px;
+  border-top: 2px solid #ccc;
+}
+
+.cart h2 {
+  margin-bottom: 10px;
 }
